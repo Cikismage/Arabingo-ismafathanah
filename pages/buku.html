@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Bagian head sama seperti sebelumnya -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Pembelajaran Bahasa Arab</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>📚 Materi Pembelajaran</h1>
+    </header>
+
+    <main class="container">
+        <section class="video-pembelajaran">
+            <h2>🎥 Video Pembelajaran</h2>
+            <div class="video-grid">
+                <!-- Video 1 -->
+                <div class="video-wrapper">
+                    <iframe 
+                        src="https://www.youtube.com/embed/Qb01HLzSp-g?si=TsZYJSIYIsF7PXC9" 
+                        title="Jumlah Fi'liyyah" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+        
+                <!-- Video 2 -->
+                <div class="video-wrapper">
+                    <iframe
+                        src="https://www.youtube.com/embed/TzsB0pcNDmg?si=CSTKKP9QMqb0ZCWZ" 
+                        title="Jumlah Ismiyyah"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                
+            </div>
+        </section>
+
+        <section class="materi">
+            <div class="kosakata-item">
+                <h2>Kosakata Dasar</h2>
+                <div class="kata" data-audio="kitab.mp3">
+                    <span>Buku</span>
+                    <span dir="rtl">كِتَابٌ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="belajar.mp3">
+                    <span>Belajar</span>
+                    <span dir="rtl">دَرَسَ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="menulis.mp3">
+                    <span>Menulis</span>
+                    <span dir="rtl">كَتَبَ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="membaca.mp3">
+                    <span>Membaca</span>
+                    <span dir="rtl">قَرَأَ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="bertanya.mp3">
+                    <span>Bertanya</span>
+                    <span dir="rtl">سَأَلَ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="menjawab.mp3">
+                    <span>Menjawab</span>
+                    <span dir="rtl">أَجَابَ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="mengangkattangan.mp3">
+                    <span>Mengangkat Tangan</span>
+                    <span dir="rtl">رَفَعَ يَدَهُ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="pergi.mp3 ">
+                    <span>Pergi</span>
+                    <span dir="rtl">ذَهَبَ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="masuk.mp3">
+                    <span>Masuk</span>
+                    <span dir="rtl">دَخَلَ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="keluar.mp3">
+                    <span>Keluar</span>
+                    <span dir="rtl">خَرَجَ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="duduk.mp3">
+                    <span>Duduk</span>
+                    <span dir="rtl">جَلَسَ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="mendengar.mp3">
+                    <span>Mendengar</span>
+                    <span dir="rtl">سَمِعَ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="bermain.mp3">
+                    <span>Bermain</span>
+                    <span dir="rtl">لَعِبَ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="menyusunkalimat.mp3">
+                    <span>Menyusun Kalimat</span>
+                    <span dir="rtl">كَوَّنَ جُمْلَةً</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="menggambar.mp3">
+                    <span>Menggambar</span>
+                    <span dir="rtl">رَسَمَ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="melihat.mp3">
+                    <span>Melihat</span>
+                    <span dir="rtl">نَظَرَ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="menyalin.mp3">
+                    <span>Menyalin</span>
+                    <span dir="rtl">نَقَلَ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="menghafal.mp3">
+                    <span>Menghafal</span>
+                    <span dir="rtl">حَفِظَ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="mencucitangan.mp3">
+                    <span>Mencuci Tangan</span>
+                    <span dir="rtl">غَسَلَ يَدَهُ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="makan.mp3">
+                    <span>Makan</span>
+                    <span dir="rtl">أَكَلَ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="minum.mp3">
+                    <span>Minum</span>
+                    <span dir="rtl">شَرِبَ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="bukutulis.mp3">
+                    <span>Buku Tulis</span>
+                    <span dir="rtl">دَفْتَرٌ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="ceritabuku.mp3">
+                    <span>Cerita / Buku</span>
+                    <span dir="rtl">قِصَّةٌ / كِتَابٌ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="guru.mp3">
+                    <span>Guru</span>
+                    <span dir="rtl">أُسْتَاذٌ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="pertanyaan.mp3">
+                    <span>Pertanyaan</span>
+                    <span dir="rtl">سُؤَالٌ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="tangan.mp3">
+                    <span>Tangan</span>
+                    <span dir="rtl">يَدٌ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="sekolah.mp3">
+                    <span>Sekolah</span>
+                    <span dir="rtl">مَدْرَسَةٌ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="kelas.mp3">
+                    <span>Kelas</span>
+                    <span dir="rtl">فَصْلٌ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="pintu.mp3">
+                    <span>Pintu</span>
+                    <span dir="rtl">بَابٌ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="kursi.mp3">
+                    <span>Kursi</span>
+                    <span dir="rtl">كُرْسِيٌّ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="suara.mp3">
+                    <span>Suara</span>
+                    <span dir="rtl">صَوْتٌ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="kalimat.mp3">
+                    <span>Kalimat</span>
+                    <span dir="rtl">جُمْلَةٌ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="lapangan.mp3">
+                    <span>Lapangan</span>
+                    <span dir="rtl">مَلْعَبٌ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="gambar.mp3">
+                    <span>Gambar</span>
+                    <span dir="rtl">صُورَةٌ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="papantulis.mp3">
+                    <span>Papan Tulis</span>
+                    <span dir="rtl">سَبُّورَةٌ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="kata.mp3">
+                    <span>Kata</span>
+                    <span dir="rtl">كَلِمَةٌ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="ayat.mp3">
+                    <span>Ayat (Al-Qur'an)</span>
+                    <span dir="rtl">آيَةٌ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="air.mp3">
+                    <span>Air</span>
+                    <span dir="rtl">مَاءٌ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="makanan.mp3">
+                    <span>Makanan</span>
+                    <span dir="rtl">طَعَامٌ</span>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                
+            </div>
+
+            <div class="kalimat">
+                <h2>Contoh Kalimat (10 Kalimat)</h2>
+                <div class="kata" data-audio="1.mp3">
+                    <p>1. Murid itu berada di kelas</p>
+                    <p dir="rtl">الطَّالِبُ فِي الْفَصْلِ</p>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="2.mp3">
+                    <p>2. Guru itu ada di sekolah</p>
+                    <p dir="rtl">الْمُعَلِّمُ فِي الْمَدْرَسَةِ</p>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="3.mp3">
+                    <p>3. Buku itu ada di atas meja</p>
+                    <p dir="rtl">الْكِتَابُ عَلَى الْمَكْتَبِ</p>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="4.mp3">
+                    <p>4. Pintunya terbuka</p>
+                    <p dir="rtl">الْبَابُ مَفْتُوحٌ</p>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="5.mp3">
+                    <p>5. Gambarnya indah</p>
+                    <p dir="rtl">الصُّورَةُ جَمِيلَةٌ</p>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="6.mp3">
+                    <p>6. Murid itu pergi ke sekolah</p>
+                    <p dir="rtl">ذَهَبَ الطَّالِبُ إِلَى الْمَدْرَسَةِ</p>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="7.mp3">
+                    <p>7. Anak itu membaca buku</p>
+                    <p dir="rtl">قَرَأَ الطِّفْلُ الْكِتَابَ</p>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="8.mp3">
+                    <p>8. Anak laki-laki itu menulis di buku tulis</p>
+                    <p dir="rtl">كَتَبَ الْوَلَدُ فِي الدَّفْتَرِ</p>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="9.mp3">
+                    <p>9. Guru itu duduk di kursi</p>
+                    <p dir="rtl">جَلَسَ الْمُعَلِّمُ عَلَى الْكُرْسِيِّ</p>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+                <div class="kata" data-audio="10.mp3">
+                    <p>10. Anak perempuan itu menggambar gambar</p>
+                    <p dir="rtl">رَسَمَتِ الْبِنْتُ صُورَةً</p>
+                    <button class="play-button" onclick="playAudio(this)">▶️</button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>Isma Fathanah - 2102455 © Copyright 2025</p>
+    </footer>
+
+    <script>
+        let currentAudio = null;
+    
+        function playAudio(button) {
+            // Hentikan audio yang sedang bermain
+            if(currentAudio) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+                button.classList.remove('playing');
+            }
+    
+            // Dapatkan elemen parent
+            const parentDiv = button.closest('.kata');
+            const audioFile = parentDiv.getAttribute('data-audio');
+            
+            // Buat objek audio
+            const audioPath = `../assets/audio/${audioFile}`;
+            currentAudio = new Audio(audioPath);
+    
+            // Update tampilan tombol
+            button.classList.add('playing');
+    
+            // Event handler saat audio selesai
+            currentAudio.addEventListener('ended', () => {
+                button.classList.remove('playing');
+            });
+    
+            // Mulai mainkan audio
+            currentAudio.play().catch(error => {
+                console.error('Gagal memainkan audio:', error);
+                button.classList.remove('playing');
+            });
+        }
+    </script>
+</body>
+</html>
