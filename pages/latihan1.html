@@ -10,7 +10,8 @@
 </head>
 <body>
     <header>
-        <h1>✏️ Latihan Soal</h1>
+        <h1>✏️ Latihan Soal Kosakata</h1>
+        <h2>Jawablah soal dengan menggunakan harakat lengkap</h2>
         <div id="skor">Skor: 0</div>
     </header>
 
@@ -26,21 +27,56 @@
 
     <script>
         const semuaSoalData = [
-            { soal: 'Tulisan Arab untuk "Buku"', jawaban: "كِتَاب" },
-            { soal: 'Tulisan Arab untuk "Pensil"', jawaban: "قَلَم" },
-            { soal: 'Tulisan Arab untuk "Rumah"', jawaban: "بَيْت" },
-            { soal: 'Tulisan Arab untuk "Makan"', jawaban: "يَأْكُل" },
-            { soal: 'Tulisan Arab untuk "Guru"', jawaban: "مُعَلِّم" },
-            { soal: 'Tulisan Arab untuk "Sekolah"', jawaban: "مَدْرَسَة" },
-            { soal: 'Tulisan Arab untuk "Minum"', jawaban: "يَشْرَب" },
-            { soal: 'Tulisan Arab untuk "Kursi"', jawaban: "كُرْسِيّ" },
-            { soal: 'Tulisan Arab untuk "Air"', jawaban: "مَاء" },
-            { soal: 'Tulisan Arab untuk "Anak"', jawaban: "طِفْل" },
-            { soal: 'Terjemahkan: "Ibu pergi ke pasar"', jawaban: "الْأُمُّ تَذْهَبُ إِلَى السُّوقِ" },
-            { soal: 'Terjemahkan: "Ayah minum air"', jawaban: "الأَبُ يَشْرَبُ المَاءَ" },
-            { soal: 'Terjemahkan: "Guru menulis di papan tulis"', jawaban: "المُعَلِّمُ يَكْتُبُ عَلَى السَّبُّورَةِ" }
-        ];
-
+            { soal: 'Bahasa Arabnya "Buku"', jawaban: "كِتَاب" },
+            { soal: 'Bahasa Arabnya "Belajar" adalah', jawaban: "دَرَسَ" },
+            { soal: 'Bahasa Arabnya "Menulis" adalah', jawaban: "كَتَبََ" },
+            { soal: 'Bahasa Arabnya "Membaca" adalah', jawaban: "قَرَأَ" },
+            { soal: 'Bahasa Arabnya "Bertanya" adalah', jawaban: "سَأَلََ" },
+            { soal: 'Bahasa Arabnya "Menjawab" adalah', jawaban: "أَجَابََ" },
+            { soal: 'Bahasa Arabnya "Mengangkat Tangan" adalah', jawaban: "رَفَعَ يَدَهُ" },
+            { soal: 'Bahasa Arabnya "Pergi"', jawaban: "ذَهَبَ" },
+            { soal: 'Bahasa Arabnya "Masuk"', jawaban: "دَخَلَ" },
+            { soal: 'Bahasa Arabnya "Keluar"', jawaban: "خَرَجَ" },
+            { soal: 'Bahasa Arabnya "Duduk"', jawaban: "جَلَسَ" },
+            { soal: 'Bahasa Arabnya "Mendengar"', jawaban: "سَمِعََ" },
+            { soal: 'Bahasa Arabnya "Bermain"', jawaban: "لَعِبَ" },
+            { soal: 'Bahasa Arabnya "Menyusun Kalimat"', jawaban: "كَوَّنَ جُمْلَةً" },
+            { soal: 'Bahasa Arabnya "Menggambar"', jawaban: "رَسَمََ" },
+            { soal: 'Bahasa Arabnya "Melihat"', jawaban: "نَظَرَ" },
+            { soal: 'Bahasa Arabnya "Menyalin"', jawaban: "نَقَلَ" },
+            { soal: 'Bahasa Arabnya "Menghafal"', jawaban: "حَفِظَ" },
+            { soal: 'Bahasa Arabnya "Mencuci tangan"', jawaban: "غَسَلَ يَدَهُ" },
+            { soal: 'Bahasa Arabnya "Makan"', jawaban: "أَكَلَ" },
+            { soal: 'Bahasa Arabnya "Minum"', jawaban: "شَرِبَ" },
+            { soal: 'Bahasa Arabnya "Buku Tulis"', jawaban: "دَفْتَرٌ" },
+            { soal: 'Bahasa Arabnya "Cerita"', jawaban: "قِصَّةٌ" },
+            { soal: 'Bahasa Arabnya "Guru"', jawaban: "أُسْتَاذٌ" },
+            { soal: 'Bahasa Arabnya "Pertanyaan"', jawaban: "سُؤَالٌ" },
+            { soal: 'Bahasa Arabnya "Tangan"', jawaban: "يَدٌ" },
+            { soal: 'Bahasa Arabnya "Sekolah"', jawaban: "مَدْرَسَةٌ" },
+            { soal: 'Bahasa Arabnya "Kelas"', jawaban: "فَصْلٌٌ" },
+            { soal: 'Bahasa Arabnya "Pintu"', jawaban: "بَابٌ" },
+            { soal: 'Bahasa Arabnya "Kursi"', jawaban: "كُرْسِيٌٌّ" },
+            { soal: 'Bahasa Arabnya "Suara"', jawaban: "صَوْتٌ" },
+            { soal: 'Bahasa Arabnya "Kalimat"', jawaban: "جُمْلَةٌ" },
+            { soal: 'Bahasa Arabnya "Lapangan"', jawaban: "مَلْعَبٌ" },
+            { soal: 'Bahasa Arabnya "Gambar"', jawaban: "صُورَةٌ" },
+            { soal: 'Bahasa Arabnya "Papan Tulis"', jawaban: "سَبُّورَةٌ" },
+            { soal: 'Bahasa Arabnya "Kata"', jawaban: "كَلِمَةٌ" },
+            { soal: 'Bahasa Arabnya "Ayat (Al-Quran)"', jawaban: "آيَةٌ" },
+            { soal: 'Bahasa Arabnya "Air"', jawaban: "مَاءٌ" },
+            { soal: 'Bahasa Arabnya "Makanan"', jawaban: "طَعَامٌ" },
+            { soal: 'Terjemahkan ke dalam bahasa Arab: "Murid itu berada di dalam kelas"', jawaban: "الطَّالِبُ فِي الْفَصْلِ" },
+            { soal: 'Terjemahkan ke dalam bahasa Arab: "Guru itu ada di sekolah"', jawaban: "الْمُعَلِّمُ فِي الْمَدْرَسَةِ" },
+            { soal: 'Terjemahkan ke dalam bahasa Indonesia: "الْكِتَابُ عَلَى الْمَكْتَبِ"', jawaban: "Buku itu ada di atas meja" },
+            { soal: 'Terjemahkan ke dalam bahasa Indonesia: "الْبَابُ مَفْتُوحٌ"', jawaban: "Pintu itu terbuka" },
+            { soal: 'Terjemahkan ke dalam bahasa Indonesia: "الصُّورَةُ جَمِيلَةٌ"', jawaban: "Gambar itu indah" },
+            { soal: 'Terjemahkan ke dalam bahasa Indonesia: "ذَهَبَ الطَّالِبُ إِلَى الْمَدْرَسَةِ"', jawaban: "Murid itu pergi ke sekolah" },
+            { soal: 'Terjemahkan ke dalam bahasa Indonesia: "قَرَأَ الطِّفْلُ الْكِتَابَ"', jawaban: "Anak itu membaca buku" },
+            { soal: 'Terjemahkan ke dalam bahasa Indonesia: "كَتَبَ الْوَلَدُ فِي الدَّفْتَرِ"', jawaban: "Anak laki-laki itu menulis di buku tulis" },
+            { soal: 'Terjemahkan ke dalam bahasa Indonesia: "جَلَسَ الأُسْتَاذٌ عَلَى الْكُرْسِيِّ"', jawaban: "Guru itu duduk di kursi" },
+            { soal: 'Terjemahkan ke dalam bahasa Indonesia: "رَسَمَتِ الْبِنْتُ صُورَةً"', jawaban: "Anak perempuan itu menggambar gambar" },
+    ]
         // Acak soal dan pilih 10
         const soalAcak = shuffleArray([...semuaSoalData]).slice(0, 10);
         let soalAktif = 0;
